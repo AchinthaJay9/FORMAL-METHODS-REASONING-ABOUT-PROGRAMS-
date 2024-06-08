@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Machine xmlns='https://www.atelierb.eu/Formats/bxml' version='1.0' name='Asteroids' type='abstraction' position='true' semantic='true' b0check='false'>
+<Concrete_Constants>
+<Attr>
+<Pos l='8' c='1' s='18'/>
+</Attr>
+<Id value='XAxisNew' typref='2'>
+<Attr>
+<Pos l='9' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='YAxisNew' typref='2'>
+<Attr>
+<Pos l='10' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='11' c='1' s='4'/>
+</Attr>
+</Id>
+<Id value='asteroids' typref='4'>
+<Attr>
+<Pos l='12' c='1' s='9'/>
+</Attr>
+</Id>
+<Id value='emptyArea' typref='4'>
+<Attr>
+<Pos l='13' c='1' s='9'/>
+</Attr>
+</Id>
+<Id value='homebase' typref='5'>
+<Attr>
+<Pos l='14' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='starbase' typref='5'>
+<Attr>
+<Pos l='15' c='1' s='8'/>
+</Attr>
+</Id>
+</Concrete_Constants>
+<Properties>
+<Attr>
+<Pos l='17' c='1' s='10'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='19' c='10' s='2'/>
+</Attr>
+<Id value='XAxisNew' typref='2'>
+<Attr>
+<Pos l='19' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='2'>
+<Attr>
+<Pos l='19' c='13' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='20' c='10' s='1'/>
+</Attr>
+<Id value='XAxisNew' typref='2'>
+<Attr>
+<Pos l='20' c='1' s='8'/>
+</Attr>
+</Id>
+<Binary_Exp op='..' typref='2'>
+<Attr>
+<Pos l='20' c='13' s='2'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='20' c='12' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='12' typref='1'>
+<Attr>
+<Pos l='20' c='15' s='2'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='21' c='10' s='2'/>
+</Attr>
+<Id value='YAxisNew' typref='2'>
+<Attr>
+<Pos l='21' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='2'>
+<Attr>
+<Pos l='21' c='13' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='22' c='10' s='1'/>
+</Attr>
+<Id value='YAxisNew' typref='2'>
+<Attr>
+<Pos l='22' c='1' s='8'/>
+</Attr>
+</Id>
+<Binary_Exp op='..' typref='2'>
+<Attr>
+<Pos l='22' c='13' s='2'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='22' c='12' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='22' c='15' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='23' c='6' s='1'/>
+</Attr>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='23' c='1' s='4'/>
+</Attr>
+</Id>
+<Binary_Exp op='*s' typref='4'>
+<Attr>
+<Pos l='23' c='17' s='1'/>
+</Attr>
+<Id value='XAxisNew' typref='2'>
+<Attr>
+<Pos l='23' c='8' s='8'/>
+</Attr>
+</Id>
+<Id value='YAxisNew' typref='2'>
+<Attr>
+<Pos l='23' c='19' s='8'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='26' c='11' s='2'/>
+</Attr>
+<Id value='asteroids' typref='4'>
+<Attr>
+<Pos l='26' c='1' s='9'/>
+</Attr>
+</Id>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='26' c='14' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='27' c='11' s='1'/>
+</Attr>
+<Id value='asteroids' typref='4'>
+<Attr>
+<Pos l='27' c='1' s='9'/>
+</Attr>
+</Id>
+<Nary_Exp op='{' typref='4'>
+<Attr>
+<Pos l='27' c='13' s='1'/>
+</Attr>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='19' s='3'/>
+</Attr>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='27' c='17' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='27' c='23' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='32' s='3'/>
+</Attr>
+<Integer_Literal value='8' typref='1'>
+<Attr>
+<Pos l='27' c='30' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='27' c='36' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='46' s='3'/>
+</Attr>
+<Integer_Literal value='10' typref='1'>
+<Attr>
+<Pos l='27' c='43' s='2'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='6' typref='1'>
+<Attr>
+<Pos l='27' c='50' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='60' s='3'/>
+</Attr>
+<Integer_Literal value='11' typref='1'>
+<Attr>
+<Pos l='27' c='57' s='2'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='27' c='64' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='74' s='3'/>
+</Attr>
+<Integer_Literal value='12' typref='1'>
+<Attr>
+<Pos l='27' c='71' s='2'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='27' c='78' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='87' s='3'/>
+</Attr>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='27' c='85' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='2' typref='1'>
+<Attr>
+<Pos l='27' c='91' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='100' s='3'/>
+</Attr>
+<Integer_Literal value='3' typref='1'>
+<Attr>
+<Pos l='27' c='98' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='27' c='104' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='113' s='3'/>
+</Attr>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='27' c='111' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='27' c='117' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='126' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='1'>
+<Attr>
+<Pos l='27' c='124' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='27' c='130' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='139' s='3'/>
+</Attr>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='27' c='137' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='27' c='143' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='27' c='152' s='3'/>
+</Attr>
+<Integer_Literal value='7' typref='1'>
+<Attr>
+<Pos l='27' c='150' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='5' typref='1'>
+<Attr>
+<Pos l='27' c='156' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Nary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='&lt;:'>
+<Attr>
+<Pos l='29' c='11' s='2'/>
+</Attr>
+<Id value='emptyArea' typref='4'>
+<Attr>
+<Pos l='29' c='1' s='9'/>
+</Attr>
+</Id>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='29' c='14' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='30' c='24' s='1'/>
+</Attr>
+<Binary_Exp op='/\' typref='4'>
+<Attr>
+<Pos l='30' c='11' s='2'/>
+</Attr>
+<Id value='emptyArea' typref='4'>
+<Attr>
+<Pos l='30' c='1' s='9'/>
+</Attr>
+</Id>
+<Id value='asteroids' typref='4'>
+<Attr>
+<Pos l='30' c='14' s='9'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<EmptySet typref='4'>
+<Attr>
+<Pos l='30' c='26' s='2'/>
+</Attr>
+</EmptySet>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='31' c='24' s='1'/>
+</Attr>
+<Binary_Exp op='\/' typref='4'>
+<Attr>
+<Pos l='31' c='11' s='2'/>
+</Attr>
+<Id value='emptyArea' typref='4'>
+<Attr>
+<Pos l='31' c='1' s='9'/>
+</Attr>
+</Id>
+<Id value='asteroids' typref='4'>
+<Attr>
+<Pos l='31' c='14' s='9'/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='31' c='26' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='33' c='10' s='1'/>
+</Attr>
+<Id value='homebase' typref='5'>
+<Attr>
+<Pos l='33' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='33' c='12' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='34' c='10' s='1'/>
+</Attr>
+<Id value='homebase' typref='5'>
+<Attr>
+<Pos l='34' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='emptyArea' typref='4'>
+<Attr>
+<Pos l='34' c='12' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='35' c='10' s='1'/>
+</Attr>
+<Id value='homebase' typref='5'>
+<Attr>
+<Pos l='35' c='1' s='8'/>
+</Attr>
+</Id>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='35' c='14' s='3'/>
+</Attr>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='35' c='12' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='1' typref='1'>
+<Attr>
+<Pos l='35' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='37' c='10' s='1'/>
+</Attr>
+<Id value='starbase' typref='5'>
+<Attr>
+<Pos l='37' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='grid' typref='4'>
+<Attr>
+<Pos l='37' c='12' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='38' c='10' s='1'/>
+</Attr>
+<Id value='starbase' typref='5'>
+<Attr>
+<Pos l='38' c='1' s='8'/>
+</Attr>
+</Id>
+<Id value='emptyArea' typref='4'>
+<Attr>
+<Pos l='38' c='12' s='9'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op='='>
+<Attr>
+<Pos l='39' c='10' s='1'/>
+</Attr>
+<Id value='starbase' typref='5'>
+<Attr>
+<Pos l='39' c='1' s='8'/>
+</Attr>
+</Id>
+<Binary_Exp op='|-&gt;' typref='5'>
+<Attr>
+<Pos l='39' c='15' s='3'/>
+</Attr>
+<Integer_Literal value='6' typref='1'>
+<Attr>
+<Pos l='39' c='13' s='1'/>
+</Attr>
+</Integer_Literal>
+<Integer_Literal value='4' typref='1'>
+<Attr>
+<Pos l='39' c='19' s='1'/>
+</Attr>
+</Integer_Literal>
+</Binary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Properties>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='0'>
+<Id value='BOOL'/>
+</Type>
+<Type id='1'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='2'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+<Type id='3'>
+<Unary_Exp op='POW'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='4'>
+<Unary_Exp op='POW'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</Unary_Exp>
+</Type>
+<Type id='5'>
+<Binary_Exp op='*'>
+<Id value='INTEGER'/>
+<Id value='INTEGER'/>
+</Binary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>
